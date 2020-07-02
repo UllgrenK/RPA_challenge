@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200701 16:19:17.657" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200702 16:02:15.660" rpa="false">
 <suite id="s1" name="Tests" source="C:\RPAChallenge\Tests">
-<suite id="s1-s1" name="FoodieReceipts" source="C:\RPAChallenge\Tests\FoodieReceipts.robot">
+<suite id="s1-s1" name="FoodieRecipes" source="C:\RPAChallenge\Tests\FoodieRecipes.robot">
 <test id="s1-s1-t1" name="Navigate to Foodie Front Page">
 <kw name="Begin Web Test" library="Common" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -10,14 +10,14 @@
 <arg>about:blank</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20200701 16:19:18.028" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200701 16:19:18.027" endtime="20200701 16:19:21.334"></status>
+<msg timestamp="20200702 16:02:15.867" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200702 16:02:15.867" endtime="20200702 16:02:19.040"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200701 16:19:21.335" endtime="20200701 16:19:23.464"></status>
+<status status="PASS" starttime="20200702 16:02:19.041" endtime="20200702 16:02:21.166"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:18.027" endtime="20200701 16:19:23.465"></status>
+<status status="PASS" starttime="20200702 16:02:15.867" endtime="20200702 16:02:21.166"></status>
 </kw>
 <kw name="Go to Foodie Front Page" library="FoodieApp">
 <kw name="Load Foodie Front Page" library="FrontPage">
@@ -26,38 +26,38 @@
 <arguments>
 <arg>https://www.foodie.fi/</arg>
 </arguments>
-<msg timestamp="20200701 16:19:23.468" level="INFO">Opening url 'https://www.foodie.fi/'</msg>
-<status status="PASS" starttime="20200701 16:19:23.468" endtime="20200701 16:19:25.745"></status>
+<msg timestamp="20200702 16:02:21.168" level="INFO">Opening url 'https://www.foodie.fi/'</msg>
+<status status="PASS" starttime="20200702 16:02:21.168" endtime="20200702 16:02:22.995"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>${FRONTPAGE_PANEL}</arg>
 </arguments>
-<status status="PASS" starttime="20200701 16:19:25.746" endtime="20200701 16:19:25.862"></status>
+<status status="PASS" starttime="20200702 16:02:22.996" endtime="20200702 16:02:23.218"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that the current page title equals ``title``.</doc>
 <arguments>
 <arg>Foodie.fi</arg>
 </arguments>
-<msg timestamp="20200701 16:19:25.883" level="INFO">Page title is 'Foodie.fi'.</msg>
-<status status="PASS" starttime="20200701 16:19:25.862" endtime="20200701 16:19:25.883"></status>
+<msg timestamp="20200702 16:02:23.227" level="INFO">Page title is 'Foodie.fi'.</msg>
+<status status="PASS" starttime="20200702 16:02:23.218" endtime="20200702 16:02:23.227"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:23.467" endtime="20200701 16:19:25.884"></status>
+<status status="PASS" starttime="20200702 16:02:21.167" endtime="20200702 16:02:23.227"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:23.466" endtime="20200701 16:19:25.884"></status>
+<status status="PASS" starttime="20200702 16:02:21.167" endtime="20200702 16:02:23.227"></status>
 </kw>
 <kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200701 16:19:25.887" endtime="20200701 16:19:28.118"></status>
+<status status="PASS" starttime="20200702 16:02:23.230" endtime="20200702 16:02:25.431"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:25.885" endtime="20200701 16:19:28.119"></status>
+<status status="PASS" starttime="20200702 16:02:23.229" endtime="20200702 16:02:25.431"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:18.025" endtime="20200701 16:19:28.121" critical="yes"></status>
+<status status="PASS" starttime="20200702 16:02:15.866" endtime="20200702 16:02:25.433" critical="yes"></status>
 </test>
-<test id="s1-s1-t2" name="Search a receipe">
+<test id="s1-s1-t2" name="Search a recipe">
 <kw name="Begin Web Test" library="Common" type="setup">
 <kw name="Open Browser" library="SeleniumLibrary">
 <doc>Opens a new browser instance to the optional ``url``.</doc>
@@ -65,31 +65,225 @@
 <arg>about:blank</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20200701 16:19:28.136" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200701 16:19:28.135" endtime="20200701 16:19:31.707"></status>
+<msg timestamp="20200702 16:02:25.449" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200702 16:02:25.448" endtime="20200702 16:02:28.615"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200701 16:19:31.708" endtime="20200701 16:19:33.833"></status>
+<status status="PASS" starttime="20200702 16:02:28.616" endtime="20200702 16:02:30.740"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:28.134" endtime="20200701 16:19:33.834"></status>
+<status status="PASS" starttime="20200702 16:02:25.447" endtime="20200702 16:02:30.740"></status>
+</kw>
+<kw name="Go to Foodie Front Page" library="FoodieApp">
+<kw name="Load Foodie Front Page" library="FrontPage">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.foodie.fi/</arg>
+</arguments>
+<msg timestamp="20200702 16:02:30.742" level="INFO">Opening url 'https://www.foodie.fi/'</msg>
+<status status="PASS" starttime="20200702 16:02:30.742" endtime="20200702 16:02:32.741"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${FRONTPAGE_PANEL}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 16:02:32.742" endtime="20200702 16:02:32.781"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Foodie.fi</arg>
+</arguments>
+<msg timestamp="20200702 16:02:32.825" level="INFO">Page title is 'Foodie.fi'.</msg>
+<status status="PASS" starttime="20200702 16:02:32.781" endtime="20200702 16:02:32.825"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:30.741" endtime="20200702 16:02:32.826"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:30.741" endtime="20200702 16:02:32.826"></status>
+</kw>
+<kw name="Search Recipe with a search term" library="FoodieApp">
+<arguments>
+<arg>Makkara</arg>
+</arguments>
+<kw name="Input search phrase" library="TopNav">
+<arguments>
+<arg>${Search_term}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${TOPNAV_SEARCH_INPUT}</arg>
+<arg>${Search_phrase}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:32.830" level="INFO">Typing text 'Makkara' into text field 'id=multisearch-query'.</msg>
+<status status="PASS" starttime="20200702 16:02:32.828" endtime="20200702 16:02:32.984"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:32.828" endtime="20200702 16:02:32.985"></status>
+</kw>
+<kw name="Select category for search" library="TopNav">
+<arguments>
+<arg>Reseptit</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${TOPNAV_CATEGORYLIST}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 16:02:32.985" endtime="20200702 16:02:32.997"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TOPNAV_CATEGORYLIST}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:32.997" level="INFO">Clicking element 'css=div[class='chzn-container chzn-container-single']'.</msg>
+<status status="PASS" starttime="20200702 16:02:32.997" endtime="20200702 16:02:33.214"></status>
+</kw>
+<kw name="Get multisearch category locator" library="TopNav">
+<arguments>
+<arg>${Category}</arg>
+</arguments>
+<assign>
+<var>${List_locator}</var>
+</assign>
+<msg timestamp="20200702 16:02:33.215" level="INFO">${List_locator} = //li[contains(text(), 'Reseptit')]</msg>
+<status status="PASS" starttime="20200702 16:02:33.214" endtime="20200702 16:02:33.215"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${List_locator}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:33.216" level="INFO">Clicking element '//li[contains(text(), 'Reseptit')]'.</msg>
+<status status="PASS" starttime="20200702 16:02:33.215" endtime="20200702 16:02:33.574"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:32.985" endtime="20200702 16:02:33.574"></status>
+</kw>
+<kw name="Click search button" library="TopNav">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TOPNAV_SEARCH_BTN}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:33.575" level="INFO">Clicking element 'id=multisearch-btn'.</msg>
+<status status="PASS" starttime="20200702 16:02:33.574" endtime="20200702 16:02:33.678"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:33.574" endtime="20200702 16:02:33.679"></status>
+</kw>
+<kw name="Check page title" library="SearchResultsRecipes">
+<arguments>
+<arg>${Search_term}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SRCH_RCIPES_TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 16:02:33.680" endtime="20200702 16:02:34.072"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${SRCH_RCIPES_TITLE}</arg>
+<arg>${Search_phrase}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:34.478" level="INFO">Element 'CSS=h2[class=category-header]' contains text 'Makkara'.</msg>
+<status status="PASS" starttime="20200702 16:02:34.073" endtime="20200702 16:02:34.478"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:33.679" endtime="20200702 16:02:34.478"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:32.827" endtime="20200702 16:02:34.479"></status>
+</kw>
+<kw name="Select First Recipe" library="FoodieApp">
+<kw name="Get recipe title by order number" library="SearchResultsRecipes">
+<arguments>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${Recipe_name}</var>
+</assign>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SRCH_RCIPES_TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 16:02:34.481" endtime="20200702 16:02:34.495"></status>
+</kw>
+<kw name="Get recipe name locator" library="SearchResultsRecipes">
+<arguments>
+<arg>${ordernumber}</arg>
+</arguments>
+<assign>
+<var>${Name_locator}</var>
+</assign>
+<msg timestamp="20200702 16:02:34.497" level="INFO">${Name_locator} = //ul[@class='shelf clear cleafix']/li[1]//div[@class='name']</msg>
+<status status="PASS" starttime="20200702 16:02:34.496" endtime="20200702 16:02:34.498"></status>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Name_locator}</arg>
+</arguments>
+<assign>
+<var>${title}</var>
+</assign>
+<msg timestamp="20200702 16:02:34.540" level="INFO">${title} = Makkarapata</msg>
+<status status="PASS" starttime="20200702 16:02:34.498" endtime="20200702 16:02:34.540"></status>
+</kw>
+<msg timestamp="20200702 16:02:34.540" level="INFO">${Recipe_name} = Makkarapata</msg>
+<status status="PASS" starttime="20200702 16:02:34.480" endtime="20200702 16:02:34.540"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
-<arg>Not Implemented</arg>
+<arg>${Recipe_name}</arg>
 </arguments>
-<msg timestamp="20200701 16:19:33.835" level="INFO">Not Implemented</msg>
-<status status="PASS" starttime="20200701 16:19:33.835" endtime="20200701 16:19:33.836"></status>
+<msg timestamp="20200702 16:02:34.541" level="INFO">Makkarapata</msg>
+<status status="PASS" starttime="20200702 16:02:34.540" endtime="20200702 16:02:34.541"></status>
+</kw>
+<kw name="Select Recipe by order number" library="SearchResultsRecipes">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${SRCH_RCIPES_TITLE}</arg>
+</arguments>
+<status status="PASS" starttime="20200702 16:02:34.541" endtime="20200702 16:02:34.551"></status>
+</kw>
+<kw name="Get search result locator" library="SearchResultsRecipes">
+<arguments>
+<arg>${ordernumber}</arg>
+</arguments>
+<assign>
+<var>${Recipe_locator}</var>
+</assign>
+<msg timestamp="20200702 16:02:34.551" level="INFO">${Recipe_locator} = //ul[@class='shelf clear cleafix']/li[1]</msg>
+<status status="PASS" starttime="20200702 16:02:34.551" endtime="20200702 16:02:34.552"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Recipe_locator}</arg>
+</arguments>
+<msg timestamp="20200702 16:02:34.552" level="INFO">Clicking element '//ul[@class='shelf clear cleafix']/li[1]'.</msg>
+<status status="PASS" starttime="20200702 16:02:34.552" endtime="20200702 16:02:34.696"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:34.541" endtime="20200702 16:02:34.696"></status>
+</kw>
+<status status="PASS" starttime="20200702 16:02:34.479" endtime="20200702 16:02:34.696"></status>
 </kw>
 <kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200701 16:19:33.839" endtime="20200701 16:19:37.115"></status>
+<status status="PASS" starttime="20200702 16:02:34.698" endtime="20200702 16:02:36.895"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:33.837" endtime="20200701 16:19:37.116"></status>
+<status status="PASS" starttime="20200702 16:02:34.698" endtime="20200702 16:02:36.895"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:28.131" endtime="20200701 16:19:37.117" critical="yes"></status>
+<status status="PASS" starttime="20200702 16:02:25.441" endtime="20200702 16:02:36.897" critical="yes"></status>
 </test>
 <test id="s1-s1-t3" name="Add a receipe to the shopping list">
 <kw name="Begin Web Test" library="Common" type="setup">
@@ -99,35 +293,35 @@
 <arg>about:blank</arg>
 <arg>Chrome</arg>
 </arguments>
-<msg timestamp="20200701 16:19:37.126" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200701 16:19:37.126" endtime="20200701 16:19:40.623"></status>
+<msg timestamp="20200702 16:02:36.913" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200702 16:02:36.912" endtime="20200702 16:02:40.120"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20200701 16:19:40.624" endtime="20200701 16:19:42.751"></status>
+<status status="PASS" starttime="20200702 16:02:40.120" endtime="20200702 16:02:42.259"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:37.125" endtime="20200701 16:19:42.751"></status>
+<status status="PASS" starttime="20200702 16:02:36.910" endtime="20200702 16:02:42.259"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Not Implemented</arg>
 </arguments>
-<msg timestamp="20200701 16:19:42.752" level="INFO">Not Implemented</msg>
-<status status="PASS" starttime="20200701 16:19:42.752" endtime="20200701 16:19:42.752"></status>
+<msg timestamp="20200702 16:02:42.260" level="INFO">Not Implemented</msg>
+<status status="PASS" starttime="20200702 16:02:42.260" endtime="20200702 16:02:42.260"></status>
 </kw>
 <kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200701 16:19:42.754" endtime="20200701 16:19:46.043"></status>
+<status status="PASS" starttime="20200702 16:02:42.263" endtime="20200702 16:02:44.386"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:42.753" endtime="20200701 16:19:46.044"></status>
+<status status="PASS" starttime="20200702 16:02:42.262" endtime="20200702 16:02:44.387"></status>
 </kw>
-<status status="PASS" starttime="20200701 16:19:37.122" endtime="20200701 16:19:46.046" critical="yes"></status>
+<status status="PASS" starttime="20200702 16:02:36.907" endtime="20200702 16:02:44.388" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20200701 16:19:17.707" endtime="20200701 16:19:46.059"></status>
+<status status="PASS" starttime="20200702 16:02:15.689" endtime="20200702 16:02:44.398"></status>
 </suite>
-<status status="PASS" starttime="20200701 16:19:17.668" endtime="20200701 16:19:46.106"></status>
+<status status="PASS" starttime="20200702 16:02:15.664" endtime="20200702 16:02:44.423"></status>
 </suite>
 <statistics>
 <total>
@@ -138,7 +332,7 @@
 </tag>
 <suite>
 <stat pass="3" fail="0" id="s1" name="Tests">Tests</stat>
-<stat pass="3" fail="0" id="s1-s1" name="FoodieReceipts">Tests.FoodieReceipts</stat>
+<stat pass="3" fail="0" id="s1-s1" name="FoodieRecipes">Tests.FoodieRecipes</stat>
 </suite>
 </statistics>
 <errors>

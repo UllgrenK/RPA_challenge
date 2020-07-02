@@ -9,8 +9,12 @@ Test Teardown   End Web Test
 Navigate to Foodie Front Page
     FoodieApp.Go to Foodie Front Page
 
-Search a receipe
-    Log   Not Implemented
+Search a recipe
+    FoodieApp.Go to Foodie Front Page
+    FoodieApp.Search Recipe with a search term   Makkara
+    FoodieApp.Select First Recipe
+    
+
 
 
 Add a receipe to the shopping list
