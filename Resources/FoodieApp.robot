@@ -3,16 +3,12 @@ Resource  PO/FrontPage.robot
 Resource  PO/TopNav.robot
 Resource  PO/SearchResultsRecipes.robot
 Resource  PO/RecipePage.robot
-Resource  PO/Cart.robot
+Resource  PO/ShoppingList.robot
 
 ***Keywords***
 
 Go to Foodie Front Page
     FrontPage.Load Foodie Front Page
-
-Search Recipe by Category
-    [Arguments]   ${Recipe_search_category}
-
 
 
 Search Recipe with a search term
@@ -29,5 +25,11 @@ Select First Recipe
     SearchResultsRecipes.Select Recipe by order number   1
     RecipePage.Recipe title should contain the   ${Recipe_name}
 
-Add selected recipe to shopping cart 
-    RecipePage.Add recipe to cart 
+Add recipe to shopping list 
+    RecipePage.Add recipe to shopping list 
+
+Go to the Shopping List
+    TopNav.Click to the shopping list
+    ShoppingList.Shopping list page should appear
+
+

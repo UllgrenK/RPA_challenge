@@ -15,7 +15,7 @@ Get recipe title
     ${Title}                            Get Text           ${RECIPE_TITLE}
     [Return]                            ${Title}
 
-Add recipe to cart 
+Add recipe to shopping list
     Wait until page contains element    ${RECIPE_TITLE}
     Click element    ${RECIPE_ADD_TO_CART_BTN}
 

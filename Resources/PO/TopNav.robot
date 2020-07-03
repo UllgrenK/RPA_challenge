@@ -2,10 +2,11 @@
 Library    SeleniumLibrary
 
 ***Variables***
-${TOPNAV_SEARCH_INPUT} =    id=multisearch-query
-${TOPNAV_CATEGORYLIST} =    css=div[class='chzn-container chzn-container-single']    
-${TOPNAV_SEARCH_BTN} =      id=multisearch-btn
-${TOPNAV_RECIPES} =         id=js-root-recipes
+${TOPNAV_SEARCH_INPUT} =        id=multisearch-query
+${TOPNAV_CATEGORYLIST} =        css=div[class='chzn-container chzn-container-single']    
+${TOPNAV_SEARCH_BTN} =          id=multisearch-btn
+${TOPNAV_RECIPES} =             id=js-root-recipes
+${TOPNAV_SHOPPINGLIST_BTN} =    id=topmenu-shoppinglist
 
 ***Keywords***
 # Solve locators
@@ -32,3 +33,5 @@ Select category for search
 Click search button
     Click Element    ${TOPNAV_SEARCH_BTN}
 
+Click to the shopping list
+    Click Element    ${TOPNAV_SHOPPINGLIST_BTN}

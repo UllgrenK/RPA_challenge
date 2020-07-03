@@ -9,7 +9,7 @@ ${CART_TITLE} =         xpath=//a[@class="shoppinglist-title-bar clearfix"]
 # Solve locators
 
 # Page actions
-Shopping cart should appear
+Shopping list page should appear
     Wait until page contains element    ${CART_TITLE}
     
 
