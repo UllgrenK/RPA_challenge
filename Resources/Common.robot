@@ -1,10 +1,10 @@
 ***Settings***
-Library   SeleniumLibrary
+Library    SeleniumLibrary
 
- 
+
 ***Keywords***
 Begin Web Test
-    Open Browser   about:blank   Chrome
+    Open Browser               about:blank    Chrome
     Maximize Browser Window
 
 End Web Test
