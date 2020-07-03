@@ -19,10 +19,11 @@ Search Recipe with a search term
     SearchResultsRecipes.Page title should contain the search phrase   ${Search_term}
 
 
-Select First Recipe
-    ${Recipe_name}    SearchResultsRecipes.Get recipe title by order number  1
+Select Recipe by order number    
+    [Arguments]   ${Order_number}
+    ${Recipe_name}    SearchResultsRecipes.Get recipe title by order number  ${Order_number}
     Log    ${Recipe_name}
-    SearchResultsRecipes.Select Recipe by order number   1
+    SearchResultsRecipes.Select Recipe by order number   ${Order_number}
     RecipePage.Recipe title should contain the   ${Recipe_name}
 
 Add recipe to shopping list 
